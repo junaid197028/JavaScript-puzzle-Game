@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link rel="stylesheet" href="./assets/css/tailwind.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body> 
+  <div class="h-[100vh] w-full max-w-[1360px] m-auto flex bg-gradient-to-r from-slate-500 to-white   ">
+    <div class="w-2/4 bg--[#6C7B8B] flex items-center border-r-4 border-black">
+      <div class="divv border-none text-center text-[55px] font-robotoo pb-6 select-none bg-black text-white w-full">Drag-and-Drop </div>
+    </div>
+    <div class="w-2/4 bg-stone-2000 flex justify-center items-center flex-col-reverse">
+      <div class="absolute text-[46px] font-extrabold text-red-600 hidden" id="warnn"><h2>Game Over!</h2></div>
+      <div class="grid grid-cols-3 containerr" id="box-parent">
+        <div id="box1" class="box" draggable="true"><div id="b1" class=" text-center h-[130px] w-[130px] bg-yellow-500 border-[1px] flex justify-center items-center border-black">A</div></div>
+        <div id="box2" class="box" draggable="true"><div class=" text-center h-[130px] w-[130px] bg-yellow-200 border-[1px] flex justify-center items-center border-black">B</div></div>
+        <div id="box3" class="box" draggable="true"><div class=" text-center h-[130px] w-[130px] bg-red-300    border-[1px] flex justify-center items-center border-black">C</div></div>
+        <div id="box4" class="box" draggable="true"><div class=" text-center h-[130px] w-[130px] bg-green-300  border-[1px] flex justify-center items-center border-black">D</div></div>
+        <div id="box5" class="box" draggable="true"><div class=" text-center h-[130px] w-[130px] bg-gray-400   border-[1px] flex justify-center items-center border-black">E</div></div>
+        <div id="box6" class="box" draggable="true"><div class=" text-center h-[130px] w-[130px] bg-purple-400 border-[1px] flex justify-center items-center border-black">F</div></div>
+        <div id="box7" class="box" draggable="true"><div class=" text-center h-[130px] w-[130px] bg-blue-400   border-[1px] flex justify-center items-center border-black">G</div></div>
+        <div id="box8" class="box" draggable="true"><div class=" text-center h-[130px] w-[130px] bg-lime-500   border-[1px] flex justify-center items-center border-black">H</div></div>
+        <div id="box9" class="box" draggable="true"><div class=" text-center h-[130px] w-[130px] bg-blue-300   border-[1px] flex justify-center items-center border-black">I</div></div>
+      </div>
+      <div class="flex gap-x-4 pb-2">
+        <div><button class="px-4 py-3 bg-slate-500 text-white rounded text-xl border-[1.5px] border-black" onclick="onTimer(); rndm(); ">Start</button></div>
+        <div><button class="px-3 py-3 bg-slate-500 text-white rounded text-xl border-[1.5px] border-black" onclick="rldd()">Reset</button></div>
+        <div><button class="px-3 py-3 bg-slate-500 text-white rounded text-xl border-[1.5px] border-black" id="mycounter">00:00 </button></div>
+        
+      </div>
+    </div>
+    
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
